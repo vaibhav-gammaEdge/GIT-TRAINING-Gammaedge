@@ -13,5 +13,3 @@ def checkprime(num):
 
 num = int(input("enter any no: "))
 checkprime(num)
-
-print("Hello")
