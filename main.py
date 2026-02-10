@@ -23,7 +23,8 @@ async def store_request_data(request: Request, call_next):
         "method": request.method,
         "path": request.url.path,
         "headers": dict(request.headers),
-        "cookies": request.cookies
+        "cookies": request.cookies,
+        "ip":request.client.host
     }
 
     if os.path.exists(LOG_FILE):
